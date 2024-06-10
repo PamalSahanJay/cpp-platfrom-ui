@@ -1,9 +1,16 @@
 {
   "name": "@cpp-platfrom-ui/source",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "publish:auth": "npx nx build authentication && npm publish dist/libs/authentication",
+    "build:auth": "npx nx build authentication"
+  },
   "private": true,
+  "publishConfig": {
+    "cache": "cache/.npm",
+    "registry": "https://artifactory.aws.wiley.com/artifactory/api/npm/npm/"
+  },
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
