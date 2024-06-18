@@ -8,8 +8,8 @@ export default defineConfig({
   cacheDir: '../../node_modules/.vite/apps/demo',
 
   server: {
-    port: 4200,
-    host: 'localhost',
+    port: 3002,
+    host: 'local.admin.testbank.wiley.host',
   },
 
   preview: {

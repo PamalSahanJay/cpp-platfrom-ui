@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cpp-platfrom-ui/authentication": ["libs/authentication/src/index.ts"]
+      "@cpp-platfrom-ui/authentication": ["libs/authentication/src/index.ts"],
+      "@cpp-platfrom-ui/common-ui": ["libs/common-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

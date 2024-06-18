@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "publish:auth": "npx nx build authentication && npm publish dist/libs/authentication",
-    "build:auth": "npx nx build authentication"
+    "build:auth": "npx nx build authentication",
+    "publish:common-ui": "npx nx build common-ui && npm publish dist/libs/common-ui",
+    "build:common-ui": "npx nx build common-ui"
   },
   "private": true,
   "publishConfig": {
@@ -12,6 +14,7 @@
     "registry": "https://artifactory.aws.wiley.com/artifactory/api/npm/npm/"
   },
   "dependencies": {
+    "oidc-react": "^3.2.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "^6.23.1",
