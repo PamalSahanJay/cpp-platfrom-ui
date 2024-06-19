@@ -6,7 +6,8 @@
     "publish:auth": "npx nx build authentication && npm publish dist/libs/authentication",
     "build:auth": "npx nx build authentication",
     "publish:common-ui": "npx nx build common-ui && npm publish dist/libs/common-ui",
-    "build:common-ui": "npx nx build common-ui"
+    "build:common-ui": "npx nx build common-ui",
+    "start": "npx nx serve demo"
   },
   "private": true,
   "publishConfig": {
@@ -14,11 +15,15 @@
     "registry": "https://artifactory.aws.wiley.com/artifactory/api/npm/npm/"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.20",
     "oidc-react": "^3.2.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "^6.23.1",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "universal-cookie": "^7.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
@@ -40,12 +45,14 @@
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@testing-library/react": "15.0.6",
+    "@types/debug": "^4.1.12",
     "@types/jest": "^29.4.0",
     "@types/node": "18.16.9",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.3.0",
     "@typescript-eslint/parser": "^7.3.0",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react": "^4.2.0",
     "@vitest/ui": "^1.3.1",
     "babel-jest": "^29.4.1",
