@@ -1,0 +1,18 @@
+.card {
+    min-height: 200px;
+    min-width: 200px;
+    margin: 15px;
+    padding: 30px;
+    vertical-align: bottom;
+    background: var(--white);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 3px var(--greyC4);
+}
+
+.iconPlace {
+    height: 150px;
+    overflow: hidden;
+}

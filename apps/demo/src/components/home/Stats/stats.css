@@ -1,0 +1,12 @@
+.stats {
+    padding: 10px;
+}
+
+.number {
+    font-size: 48px;
+    line-height: 49px;
+}
+
+.title {
+    font-size: larger;
+}
