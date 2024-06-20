@@ -7,6 +7,8 @@ import router from '../router';
 import { ORIGINAL_PATH } from '../constants';
 import { Authentication } from "@cpp-platfrom-ui/authentication";
 
+import '../main.global.css';
+
 export function App() {
 
   const oidcConfig = {

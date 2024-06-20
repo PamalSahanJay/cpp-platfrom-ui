@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './card.css';
-// import * as styles from './card.css';
+// import styles from './card.css';
+import './card.css';
 
 interface ICardProps {
     title: string;
@@ -10,8 +10,8 @@ interface ICardProps {
 
 export function Card({ title, subtitle, icon }: ICardProps) {
   return (
-      <div className={styles.card}>
-          <div className={styles.iconPlace}>{icon}</div>
+      <div className="card">
+          <div className="iconPlace">{icon}</div>
           <h2>{title}</h2>
           <h4>{subtitle}</h4>
       </div>

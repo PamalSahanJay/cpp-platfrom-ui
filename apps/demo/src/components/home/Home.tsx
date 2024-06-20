@@ -1,18 +1,18 @@
 import React from 'react';
-import styles from './home.css';
+import  './home.css';
 import {Card} from "../Card/Card";
 import {CmhIcon, DsIcon, DssIcon, EaIcon, EmIcon, IgIcon, JfIcon, KeIcon, KmmIcon, PatIcon} from "../../icons";
 import {Stats} from "./Stats";
 
 export function Home() {
   return (
-      <div className={styles.home}>
-          <div className={styles.titles}>
+      <div className="home">
+          <div className="titles">
                 <Stats title={'Content Packages Today'} number={12012}/>
                 <Stats title={'Content Deliveries Today'} number={25019}/>
                 <Stats title={'Enrichment Tasks Today'} number={15012}/>
           </div>
-          <div className={styles.dashboard}>
+          <div className="dashboard">
 
               <Card title={'KNOWLEDGE EXPLORER'} subtitle={'Browse and discover enriched content'}
                     icon={<KeIcon/>}/>

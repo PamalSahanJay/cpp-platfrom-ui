@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './stats.css';
+import './stats.css';
 
 interface IStateProps {
     title: string,
@@ -9,9 +9,9 @@ interface IStateProps {
 
 export function Stats({title, number, comment}: IStateProps) {
   return (
-     <div className={styles.stats}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.number}>{number}</div>
+     <div className="stats">
+        <div className="title">{title}</div>
+        <div className="number">{number}</div>
         <div>{comment}</div>
      </div>
   );

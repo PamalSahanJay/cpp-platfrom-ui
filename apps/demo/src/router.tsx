@@ -6,10 +6,11 @@ import {
 //   import ProductListContainer from './containers/ProductListContainer';
 //   import ProductDetailsContainer from './containers/ProductDetailsContainer';
 import PageNotFound from './containers/PageNotFound';
-import Hello from './components/Hello';
+import Hello from './components/Hello/Hello';
 import LogoutContainer from './containers/LogoutContainer';
 //   import LogoutContainer from './containers/LogoutContainer';
   import RootContainer from './containers/RootContainer';
+import { Home } from './components/home';
   
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -22,7 +23,8 @@ import LogoutContainer from './containers/LogoutContainer';
         <Route path={'refreshLogin'} element={null} />
         <Route path={'logout'} element={<LogoutContainer />} />
   
-        <Route path={'/'} element={<Hello/>} />
+        <Route path={'/'} element={<Home/>} />
+        <Route path={'/helo'} element={<Hello/>} />
   
         {/* <Route path="products">
           <Route path=":productId" element={<Hello/>} />
