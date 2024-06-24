@@ -1,5 +1,6 @@
 const base = {
-    OIDC_AUTHORITY: 'https://external-sso.ppd.wiley.com/auth/realms/wiley',
+    // OIDC_AUTHORITY: 'https://external-sso.ppd.wiley.com/auth/realms/wiley',
+    OIDC_AUTHORITY: 'https://alm-external-sso-ppd.aws.wiley.com/auth/realms/wiley',
     OIDC_REDIRECT_URI: '/signin-oidc',
     OIDC_REFRESH_URI: '/refreshLogin',
     DOMAIN: window.location.hostname,

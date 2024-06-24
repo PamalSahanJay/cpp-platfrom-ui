@@ -6,11 +6,12 @@ interface ICardProps {
     title: string;
     subtitle: string;
     icon?: React.ReactNode;
+    onClickHandler?: () => void;
 }
 
-export function Card({ title, subtitle, icon }: ICardProps) {
+export function Card({ title, subtitle, icon, onClickHandler }: ICardProps) {
   return (
-      <div className="card">
+      <div className="card" onClick={onClickHandler}>
           <div className="iconPlace">{icon}</div>
           <h2>{title}</h2>
           <h4>{subtitle}</h4>

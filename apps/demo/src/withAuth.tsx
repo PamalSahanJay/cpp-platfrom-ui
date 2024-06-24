@@ -7,7 +7,7 @@ import env from './env';
 export function withAuth<P extends JSX.IntrinsicAttributes>(
   Component: React.ComponentType<P>,
 ) {
-  const WrappedComponent: React.ComponentType<P> = (hocProps) => {
+  const WrappedComponent: React.ComponentType<P> = ( hocProps) => {
     const { userData, isLoading } = useAuth();
     if (isLoading) {
       return <LoadingIndicator />;
@@ -21,7 +21,7 @@ export function withAuth<P extends JSX.IntrinsicAttributes>(
     localStorage.setItem(TESTBANK_TOKEN_KEY, userData?.access_token);
     cookies.set(TESTBANK_COOKIE, userData?.access_token, {
       path: '/',
-      domain: env.DOMAIN,
+      domain: 'wiley.host',
       sameSite: 'none',
       secure: true,
       httpOnly: false,
